@@ -1,2 +1,14 @@
+.title{
+  margin-top: 40px;
+  text-align: center;
+}
 
+.icons-advantages{
+   justify-content: center;
+   align-items: center;
+}
+
+.icons-img{
+   width: 20%;
+}
 
