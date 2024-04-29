@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<app-carousel></app-carousel>
+<div class="advantages">
+  <div>
+    <h4 class="title">OUR ADVANTAGES</h4>
+    <div class="icons-advantages d-flex flex-wrap">
+      <div class="picsum-img-wrapper col-md-auto" *ngFor="let icon of icons">
+        <img [src]="icon" alt="Icon" class="icons-img"/>
+      </div>
+    </div>
+  </div>
+</div>
