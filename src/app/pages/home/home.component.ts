@@ -14,4 +14,6 @@ export class HomeComponent {
     'assets/icons/distribution.png'
   ]
 
+  flor = 'assets/fotos/floresMuestra.jpg';
+
 }
