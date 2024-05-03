@@ -9,9 +9,9 @@ export class HomeComponent {
   
 
   icons = [
-    'assets/icons/highQuality.png',
-    'assets/icons/bestPrice.png',
-    'assets/icons/distribution.png'
+    {icon:'assets/icons/highQuality.png', text: 'High quality'},
+    {icon:'assets/icons/price.png', text: 'Best price'},
+    {icon:'assets/icons/distribution.png', text: 'Direct from our crops'}
   ]
 
   flor = 'assets/fotos/floresMuestra.jpg';

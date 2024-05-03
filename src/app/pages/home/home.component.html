@@ -4,8 +4,9 @@
   <div>
     <h4 class="title">Our Advantage</h4>
     <div class="icons-advantages d-flex flex-wrap">
-      <div class="picsum-img-wrapper col-md-auto" *ngFor="let icon of icons">
-        <img [src]="icon" alt="Icon" class="icons-img" />
+      <div class="picsum-img-wrapper col-md-auto" *ngFor="let item of icons">
+        <img [src]="item.icon" alt="Icon" class="icons-img" />
+        <div class="text-below">{{ item.text }}</div>
       </div>
     </div>
   </div>
