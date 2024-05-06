@@ -1,16 +1,21 @@
-.nav{
-    position: fixed;
+.nav {
+  position: fixed;
 }
 
-.navbar-nav{
-    font-weight: bold;
+.navbar-nav {
+  font-weight: bold;
 }
 
-.container{
-    margin: 0 20px 0px 20px;
-    padding: 0;
+.small-logo {
+  width: 12%;
+  margin-left: 3%;
 }
 
-.collapse{
-    justify-content: flex-end;
+.container {
+  margin: 0 20px 0px 20px;
+  padding: 0;
+}
+
+.collapse {
+  justify-content: flex-end;
 }
