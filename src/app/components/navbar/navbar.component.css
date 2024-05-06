@@ -25,8 +25,19 @@
   padding: 0 1rem;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-lg-none {
+  display: block;
+}
+
 @media (min-width: 992px) {
-  .navbar-expand-lg {
-    justify-content: space-between;
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-block {
+    display: block;
   }
 }
