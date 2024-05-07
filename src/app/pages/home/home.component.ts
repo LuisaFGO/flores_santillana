@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   icons = [
-    { icon: 'assets/icons/highQuality.png', text: 'High quality' },
-    { icon: 'assets/icons/bestPrice.png', text: 'Best price' },
-    { icon: 'assets/icons/distribution.png', text: 'Direct from our crops' },
+    { icon: 'assets/icons/calidad.png', text: 'High quality' },
+    { icon: 'assets/icons/etiqueta-del-precio.png', text: 'Best price' },
+    { icon: 'assets/icons/cosecha.png', text: 'Direct from our crops' },
   ];
 
   flor = 'assets/fotos/floresMuestra.jpg';
