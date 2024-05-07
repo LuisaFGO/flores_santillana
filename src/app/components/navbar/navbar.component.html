@@ -1,11 +1,25 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <img [src]="logofs" alt="logo" class="small-logo d-lg-none mr-auto" />
-    <button class="navbar-toggler ml-auto" type="button" (click)="navDeploy()">
+    <img
+      [src]="logofs"
+      alt="logo"
+      class="small-logo d-lg-none mr-auto"
+      style="width: 17%; margin-left: 3%"
+    />
+    <button
+      class="navbar-toggler ml-auto"
+      style="margin-right: 3%"
+      type="button"
+      (click)="navDeploy()"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" [ngbCollapse]="isOpen">
+    <div
+      class="collapse navbar-collapse"
+      style="text-align: center"
+      [ngbCollapse]="isOpen"
+    >
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="/home">HOME</a>
