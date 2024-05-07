@@ -2,6 +2,8 @@
   margin-top: 30px;
   text-align: center;
   color: #7c2520;
+  font-family: "ascendant";
+  font-weight: medium;
 }
 
 .icons-advantages {
@@ -18,13 +20,13 @@
 .card {
   display: flex;
   flex-direction: row;
-  background-color: #e2ccc8;
+  background-color: rgb(226, 225, 225);
   border: none;
   border-radius: 0;
 }
 
 .card-img {
-  width: 65%;
+  width: 60%;
 }
 
 .card-img img {
@@ -42,19 +44,24 @@
 .card-content h3 {
   font-size: 24px;
   color: #7c2520;
+  font-family: "ascendant";
+  font-weight: medium;
 }
 
 .card-content p {
   color: rgba(0, 0, 0, 0.7);
+  font-family: "ascendant";
+  font-weight: normal;
   font-size: 12px;
   margin-right: 20px;
 }
 
 .btn {
-  background-color: #7c2520;
-  color: white;
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
   margin-left: 40%;
-  size: 20%;
+  font-size: 90%;
 }
 
 @media (max-width: 768px) {

@@ -1,21 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "ascendant";
-  src: url("src/assets/fonts/ascendantBold.ttf") format("truetype");
+  src: url("src/assets/fonts/AscendantBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
 
 @font-face {
   font-family: "ascendant";
-  src: url("src/assets/fonts/ascendantMedium.ttf") format("truetype");
+  src: url("src/assets/fonts/AscendantMedium.ttf") format("truetype");
   font-weight: medium;
   font-style: medium;
 }
 
 @font-face {
   font-family: "ascendant";
-  src: url("src/assets/fonts/ascendantRegular.ttf") format("truetype");
+  src: url("src/assets/fonts/AscendantRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
