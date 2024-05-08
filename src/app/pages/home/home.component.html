@@ -1,16 +1,5 @@
 <app-navbar></app-navbar>
 <app-carousel></app-carousel>
-<div class="advantages">
-  <div>
-    <h4 class="title">OUR ADVANTAGE</h4>
-    <div class="icons-advantages d-flex flex-wrap">
-      <div class="picsum-img-wrapper col-md-auto" *ngFor="let item of icons">
-        <img [src]="item.icon" alt="Icon" class="icons-img" />
-        <div class="text-below">{{ item.text }}</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="card-container">
   <div class="card">
@@ -47,6 +36,18 @@
         tomorrow.
       </p>
       <button type="button" class="btn">ABOUT US</button>
+    </div>
+  </div>
+</div>
+
+<div class="advantages">
+  <div>
+    <h4 class="title">OUR ADVANTAGE</h4>
+    <div class="icons-advantages d-flex flex-wrap">
+      <div class="picsum-img-wrapper col-md-auto" *ngFor="let item of icons">
+        <img [src]="item.icon" alt="Icon" class="icons-img" />
+        <div class="text-below">{{ item.text }}</div>
+      </div>
     </div>
   </div>
 </div>
