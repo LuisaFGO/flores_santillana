@@ -179,6 +179,17 @@ button:hover {
   margin-bottom: 3%;
 }
 
+/* questions */
+
+.questions {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(226, 225, 225);
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
