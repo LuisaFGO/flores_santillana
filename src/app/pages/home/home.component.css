@@ -61,7 +61,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   scroll-behavior: smooth; /* Agregado para desplazar suavemente */
-  overflow-x: auto; /* Agrega scroll horizontal si hay demasiadas tarjetas */
   margin-left: 15%;
 }
 
