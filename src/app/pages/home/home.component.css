@@ -1,11 +1,98 @@
-.title {
-  margin-top: 40px;
-  text-align: center;
+/* general */
+
+h2 {
+  margin-top: 10px;
   color: #7c2520;
   font-family: "ascendant";
   font-weight: bold;
-  font-size: 28px;
   letter-spacing: 2px;
+}
+
+h4 {
+  font-family: "ascendant";
+  font-weight: medium;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "ascendant";
+  font-weight: normal;
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #7c2520;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c1a15;
+}
+
+/* products */
+
+.allProducts {
+  margin-top: 2%;
+  margin-top: 4%;
+}
+
+.productDiv {
+  display: flex;
+}
+
+.product-left {
+  margin-left: 10%;
+  margin-top: 6%;
+  display: inline-block;
+}
+
+.btn-product {
+  margin-top: 7%;
+}
+
+.product-right {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* Agrega scroll horizontal si hay demasiadas tarjetas */
+  margin-left: 15%;
+}
+
+.cardProduct {
+  max-width: 35%;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: rgb(226, 225, 225);
+  padding: 15px;
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.arrow-btn {
+  background-color: #7c2520;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* advantages */
+
+.title {
+  margin-top: 40px;
+  text-align: center;
 }
 
 .picsum-img-wrapper {
@@ -42,6 +129,8 @@
   margin-bottom: 30px;
 }
 
+/* history */
+
 .card {
   display: flex;
   flex-direction: row;
@@ -67,41 +156,20 @@
   margin-right: 20px;
 }
 
-.card-content h3 {
-  margin-top: 10px;
-  color: #7c2520;
-  font-family: "ascendant";
-  font-weight: bold;
-  font-size: 28px;
-  letter-spacing: 2px;
-}
-
 .card-content p {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "ascendant";
-  font-weight: normal;
   font-size: 12px;
   text-align: justify;
   margin-right: 22px;
 }
 
-.btn {
+.btn-history {
   border: none;
   border-radius: 15px;
   color: #fff;
   background-color: #7c2520;
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
   margin-left: 40%;
   margin-bottom: 3%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #5c1a15;
 }
 
 @media (max-width: 768px) {

@@ -12,5 +12,47 @@ export class HomeComponent {
     { icon: 'assets/icons/cosecha.png', text: 'Direct from our crops' },
   ];
 
-  flor = 'assets/fotos/floresMuestra.jpg';
+  flower = 'assets/fotos/floresMuestra.jpg';
+
+  products = [
+    {
+      name: 'Birds of paradise',
+      description: 'Descripción del producto 1',
+      img: 'assets/icons/etiqueta-del-precio.png',
+    },
+    {
+      name: 'Post harvest',
+      description: 'Descripción del producto 2',
+      img: 'assets/icons/etiqueta-del-precio.png',
+    },
+    {
+      name: 'Hydrangeas',
+      description: 'Descripción del producto 3',
+      img: 'assets/icons/etiqueta-del-precio.png',
+    },
+    {
+      name: 'Crops',
+      description: 'Descripción del producto 4',
+      img: 'assets/icons/etiqueta-del-precio.png',
+    },
+    {
+      name: 'Ruscus',
+      description: 'Descripción del producto 5',
+      img: 'assets/icons/etiqueta-del-precio.png',
+    },
+  ];
+
+  scrollLeft() {
+    const container = document.querySelector('.product-right');
+    if (container) {
+      container.scrollLeft -= 300; // Cambia este valor según la cantidad de desplazamiento deseada
+    }
+  }
+
+  scrollRight() {
+    const container = document.querySelector('.product-right');
+    if (container) {
+      container.scrollLeft += 300; // Cambia este valor según la cantidad de desplazamiento deseada
+    }
+  }
 }

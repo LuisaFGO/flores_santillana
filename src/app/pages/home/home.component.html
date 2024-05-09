@@ -1,13 +1,37 @@
 <app-navbar></app-navbar>
 <app-carousel></app-carousel>
 
+<div class="allProducts">
+  <div class="productDiv">
+    <div class="product-left">
+      <h2>PRODUCTS</h2>
+      <button class="btn-product btn-primary">ALL PRODUCTS</button>
+    </div>
+    <div class="product-right flex-nowrap overflow-hidden">
+      <ng-container *ngFor="let product of products; let i = index">
+        <div class="cardProduct">
+          <img [src]="product.img" class="card-img-top" />
+          <div class="cardProduct-body">
+            <h4 class="cardProduct-title">{{ product.name }}</h4>
+            <p class="cardProduct-text">{{ product.description }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="arrows-container">
+    <button class="arrow-btn" (click)="scrollLeft()">&#8249;</button>
+    <button class="arrow-btn" (click)="scrollRight()">&#8250;</button>
+  </div>
+</div>
+
 <div class="card-container">
   <div class="card">
     <div class="card-img">
-      <img [src]="flor" alt="Imagen muestra" />
+      <img [src]="flower" alt="Imagen muestra" />
     </div>
     <div class="card-content">
-      <h3>Flores Santillana S.A.S</h3>
+      <h2>Flores Santillana S.A.S</h2>
       <p>
         25 years ago, and from a handful of seeds, we started a fascinating
         learning process that has allowed us to improve and grow, which led us
@@ -35,14 +59,14 @@
         planet, our people and our society, together, to build a better
         tomorrow.
       </p>
-      <button type="button" class="btn">ABOUT US</button>
+      <button type="button" class="btn-history">ABOUT US</button>
     </div>
   </div>
 </div>
 
 <div class="advantages">
   <div>
-    <h4 class="title">OUR ADVANTAGE</h4>
+    <h2 class="title">OUR ADVANTAGE</h2>
     <div class="icons-advantages d-flex flex-wrap">
       <div class="picsum-img-wrapper col-md-auto" *ngFor="let item of icons">
         <img [src]="item.icon" alt="Icon" class="icons-img" />
