@@ -18,41 +18,41 @@ export class HomeComponent {
     {
       name: 'Birds of paradise',
       description: 'Descripción del producto 1',
-      img: 'assets/icons/etiqueta-del-precio.png',
+      img: 'assets/imgProducts/birdP.jpg',
     },
     {
-      name: 'Post harvest',
+      name: 'Crops',
       description: 'Descripción del producto 2',
-      img: 'assets/icons/etiqueta-del-precio.png',
+      img: 'assets/imgProducts/crops.jpg',
     },
     {
       name: 'Hydrangeas',
       description: 'Descripción del producto 3',
-      img: 'assets/icons/etiqueta-del-precio.png',
-    },
-    {
-      name: 'Crops',
-      description: 'Descripción del producto 4',
-      img: 'assets/icons/etiqueta-del-precio.png',
+      img: 'assets/imgProducts/hortensia.jpg',
     },
     {
       name: 'Ruscus',
+      description: 'Descripción del producto 4',
+      img: 'assets/imgProducts/ruscus.jpg',
+    },
+    {
+      name: 'Post harvest',
       description: 'Descripción del producto 5',
-      img: 'assets/icons/etiqueta-del-precio.png',
+      img: 'assets/imgProducts/postHarvest.jpg',
     },
   ];
 
   scrollLeft() {
     const container = document.querySelector('.product-right');
     if (container) {
-      container.scrollLeft -= 300; // Cambia este valor según la cantidad de desplazamiento deseada
+      container.scrollLeft -= 270;
     }
   }
 
   scrollRight() {
     const container = document.querySelector('.product-right');
     if (container) {
-      container.scrollLeft += 300; // Cambia este valor según la cantidad de desplazamiento deseada
+      container.scrollLeft += 270;
     }
   }
 }
