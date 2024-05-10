@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   isOpen = true;
 
-  logofs = 'assets/logofs.png';
+  logofs = 'assets/logos/logofs.png';
 
   navDeploy() {
     this.isOpen = !this.isOpen;

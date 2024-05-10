@@ -1,0 +1,43 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.footer {
+  background-color: #7c2520;
+  margin-top: 3%;
+  position: absolute;
+  width: 100%;
+}
+
+.logo_img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+.icons-social {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.icon-link {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+h3 {
+  color: white;
+  font-family: "ascendant";
+  font-weight: medium;
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid white;
+  margin-top: 7px;
+}
+
+.text span {
+  margin-top: -7px;
+}
