@@ -66,6 +66,7 @@ button:hover {
 
 .cardProduct {
   max-width: 31%;
+  min-width: 170px;
   flex-shrink: 0;
   margin-right: 20px;
   background-color: rgb(226, 225, 225);
