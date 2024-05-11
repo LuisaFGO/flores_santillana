@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { MessageWspComponent } from './components/message-wsp/message-wsp.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { MessageWspComponent } from './shared/message-wsp/message-wsp.component';
+import { LegalPolicyComponent } from './modals/legal-policy/legal-policy.component';
+import { PolicyCookiesComponent } from './modals/policy-cookies/policy-cookies.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,12 @@ import { MessageWspComponent } from './components/message-wsp/message-wsp.compon
     NavbarComponent,
     CarouselComponent,
     FooterComponent,
-    MessageWspComponent
+    MessageWspComponent,
+    LegalPolicyComponent,
+    PolicyCookiesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
