@@ -1,0 +1,22 @@
+p {
+  font-family: "ascendant";
+  font-weight: normal;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ascendant";
+  font-weight: bold;
+}
+
+ul {
+  font-family: "ascendant";
+  font-weight: bold;
+}
+
+ul p {
+  font-family: "ascendant";
+  font-weight: normal;
+}
