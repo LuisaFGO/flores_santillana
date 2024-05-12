@@ -11,6 +11,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MessageWspComponent } from './shared/message-wsp/message-wsp.component';
 import { LegalPolicyComponent } from './modals/legal-policy/legal-policy.component';
 import { PolicyCookiesComponent } from './modals/policy-cookies/policy-cookies.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { PolicyCookiesComponent } from './modals/policy-cookies/policy-cookies.c
     MessageWspComponent,
     LegalPolicyComponent,
     PolicyCookiesComponent,
+    AboutUsComponent,
+    GalleryComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
