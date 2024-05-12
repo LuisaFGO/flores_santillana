@@ -1,0 +1,24 @@
+p {
+  font-family: "ascendant";
+  font-weight: normal;
+}
+
+.font {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "ascendant";
+}
+
+h3 {
+  font-family: "ascendant";
+  font-weight: bold;
+}
+
+ul {
+  font-family: "ascendant";
+  font-weight: bold;
+}
+
+ul p {
+  font-family: "ascendant";
+  font-weight: normal;
+}

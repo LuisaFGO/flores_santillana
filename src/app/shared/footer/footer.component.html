@@ -14,9 +14,11 @@
     ></a>
   </div>
   <div class="text d-flex justify-content-center">
-    <h3 (click)="openLegalModal()">LEGAL NOTICE AND PRIVACY POLICY</h3>
+    <h3 (click)="openLegalModal()" class="policy">
+      LEGAL NOTICE AND PRIVACY POLICY
+    </h3>
     <span class="mx-2 text-white">|</span>
-    <h3>POLICY COOKIES</h3>
+    <h3 (click)="openCookiesModal()" class="policy">POLICY COOKIES</h3>
   </div>
   <hr class="footer-line" />
   <h3>FLORES SANTILLANA S.A.S 2024</h3>

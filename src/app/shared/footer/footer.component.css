@@ -41,3 +41,7 @@ h3 {
 .text span {
   margin-top: -7px;
 }
+
+.policy {
+  cursor: pointer;
+}
