@@ -5,7 +5,9 @@
   <div class="productDiv">
     <div class="product-left">
       <h2>PRODUCTS</h2>
-      <button class="btn-product">KNOW OUR FLOWERS!</button>
+      <button class="btn-product" routerLink="/gallery">
+        KNOW OUR FLOWERS!
+      </button>
     </div>
     <div class="product-right flex-nowrap overflow-hidden">
       <ng-container *ngFor="let product of products; let i = index">
@@ -59,7 +61,9 @@
         planet, our people and our society, together, to build a better
         tomorrow.
       </p>
-      <button type="button" class="btn-history">ABOUT US</button>
+      <button type="button" class="btn-history" routerLink="/aboutUs">
+        ABOUT US
+      </button>
     </div>
   </div>
 </div>
@@ -84,7 +88,9 @@
       us your question through our contact form.
     </p>
   </div>
-  <button type="button" class="btn-question">CONTACT</button>
+  <button type="button" class="btn-question" routerLink="/contact">
+    CONTACT
+  </button>
 </div>
 
 <app-footer></app-footer>
