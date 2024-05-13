@@ -30,6 +30,9 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "ascendant";
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 button:hover {

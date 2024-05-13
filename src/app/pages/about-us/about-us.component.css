@@ -1,0 +1,108 @@
+.title {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #7c2520;
+  font-family: "ascendant";
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+h3 {
+  font-family: "ascendant";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 7%;
+}
+
+p,
+li {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "ascendant";
+  font-weight: normal;
+  margin-top: 3%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-radius: 0;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card-container-vision {
+  margin-top: 4%;
+  margin-left: 40px;
+}
+
+.card-content-vision {
+  width: 70%;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card-content p,
+li {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.btn-gallery {
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #7c2520;
+  padding: 10px 20px;
+  margin-left: 40%;
+  margin-bottom: 3%;
+  font-family: "ascendant";
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-img,
+  .card-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .card-content > h3,
+  .card-content > p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .card-container-vision {
+    margin-left: 0;
+  }
+}

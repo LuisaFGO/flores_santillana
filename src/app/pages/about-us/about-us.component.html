@@ -1,1 +1,69 @@
-<p>about-us works!</p>
+<app-navbar></app-navbar>
+
+<div class="gallery_content">
+  <div class="title">
+    <h1>ABOUT US</h1>
+    <h2>FLORES SANTILLANA S.A.S</h2>
+  </div>
+
+  <div class="card-container mission">
+    <div class="card">
+      <div class="card-content">
+        <h3>MISSION</h3>
+        <p>
+          Flores Santillana S.A.S, is a company dedicated to the production and
+          export of flowers and foliage. It seeks to meet the needs and
+          expectations of its customers by providing high quality products. We
+          achieve this through a principled organization; with motivated,
+          trained staff, with a sense of belonging, teamwork and commitment,
+          achieving profitability and sustainability over time.
+        </p>
+        <button type="button" class="btn-gallery" routerLink="/gallery">
+          GALLERY
+        </button>
+      </div>
+      <div class="card-img">
+        <img [src]="PhotoCar" class="man_car" alt="Mission Image" />
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container-vision">
+    <div class="card">
+      <div class="card-img">
+        <img [src]="woman" class="woman" alt="Vision Image" />
+      </div>
+      <div class="card-content-vision">
+        <h3>VISION</h3>
+        <p>
+          To be leaders in the floriculture market, achieve growth in
+          infrastructure, personnel and production. Systematize the processes to
+          obtain better results. Stand out for the excellent service, commitment
+          and teamwork.
+        </p>
+        <h3>OBJECTIVES</h3>
+        <ul>
+          <li>
+            To be leaders in the production and marketing of flowers and
+            foliage.
+          </li>
+          <li>
+            Generate and maintain throughout the organization a culture of
+            customer service with high quality standards.
+          </li>
+          <li>
+            Obtain profitability that allows the company to compete efficiently.
+          </li>
+          <li>Improve Productivity.</li>
+          <li>
+            Provide an organizational climate that facilitates the permanent
+            development of its human resources.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+<app-message-wsp></app-message-wsp>
