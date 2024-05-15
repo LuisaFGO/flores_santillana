@@ -33,7 +33,6 @@ h3 {
   font-family: "ascendant";
   font-weight: bold;
   letter-spacing: 2px;
-  margin-top: 7%;
 }
 
 p,
@@ -65,11 +64,13 @@ li {
   width: 50%;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 5%;
 }
 
 .card-container-vision {
   margin-top: 4%;
-  margin-left: 40px;
+  margin-left: 70px;
+  position: relative;
 }
 
 .card-content-vision {
@@ -78,6 +79,31 @@ li {
   margin-right: 40px;
   font-size: 16px;
   text-align: justify;
+}
+
+.card-container-vision .card-img {
+  width: 35%;
+  margin-top: -7%;
+  margin-right: 3%;
+}
+
+.objectives {
+  width: 90%;
+  background-color: rgb(226, 225, 225);
+  padding: 3%;
+  border-radius: 4px;
+}
+
+.objectives ul {
+  list-style-type: none;
+}
+
+.objectives ul li::before {
+  content: "✔";
+  color: #7c2520;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .card-content p,
@@ -115,6 +141,16 @@ li {
     margin-right: 20px;
   }
   .card-container-vision {
-    margin-left: 0;
+    justify-content: center;
+  }
+
+  .card-container-vision .card-img {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+
+  .objectives {
+    width: 100%;
   }
 }
