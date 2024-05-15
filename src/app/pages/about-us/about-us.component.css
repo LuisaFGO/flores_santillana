@@ -1,6 +1,18 @@
 .title {
-  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
   margin-bottom: 4%;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #7c2520;
 }
 
 h1,
