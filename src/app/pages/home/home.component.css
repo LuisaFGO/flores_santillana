@@ -208,4 +208,38 @@ button:hover {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .card-content h2 {
+    margin-left: 5%;
+  }
+
+  .btn-history {
+    margin-left: 30%;
+  }
+
+  .items-question {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .product-left {
+    width: 25%;
+  }
+
+  .product-left h2 {
+    font-size: 18px;
+  }
+
+  .btn-product {
+    font-size: 12px;
+  }
+
+  .arrows-container {
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+
+  .arrow-btn {
+    font-size: 10px;
+  }
 }

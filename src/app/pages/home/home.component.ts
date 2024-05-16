@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  mediaQuery = window.matchMedia('(max-width: 768px)');
   icons = [
     { icon: 'assets/icons/calidad.png', text: 'High quality' },
     { icon: 'assets/icons/etiqueta-del-precio.png', text: 'Best price' },
@@ -45,14 +46,16 @@ export class HomeComponent {
   scrollLeft() {
     const container = document.querySelector('.product-right');
     if (container) {
-      container.scrollLeft -= 270;
+      if (this.mediaQuery.matches) container.scrollLeft -= 180;
+      else container.scrollLeft -= 270;
     }
   }
 
   scrollRight() {
     const container = document.querySelector('.product-right');
     if (container) {
-      container.scrollLeft += 270;
+      if (this.mediaQuery.matches) container.scrollLeft += 180;
+      else container.scrollLeft += 270;
     }
   }
 }
