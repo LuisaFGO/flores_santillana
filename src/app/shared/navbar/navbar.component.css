@@ -15,10 +15,6 @@
   margin-right: 3%;
 }
 
-.small-logo {
-  width: 14%;
-}
-
 .navbar .container {
   max-width: 100%;
   margin: 0;
@@ -48,5 +44,8 @@
   }
   .d-lg-block {
     display: block;
+  }
+  .small-logo {
+    width: 14%;
   }
 }
