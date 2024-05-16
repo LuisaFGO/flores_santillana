@@ -38,6 +38,11 @@ h3 {
   margin-top: 7px;
 }
 
+.text {
+  width: 70%;
+  margin-left: 10%;
+}
+
 .text span {
   margin-top: -7px;
 }
