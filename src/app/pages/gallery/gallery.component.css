@@ -29,7 +29,7 @@
 .title::before,
 .title::after {
   content: "";
-  height: 0.2rem;
+  height: 0.1rem;
   width: 80%;
   background-color: white;
 }
