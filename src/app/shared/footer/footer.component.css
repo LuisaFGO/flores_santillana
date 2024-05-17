@@ -26,8 +26,8 @@
 h3 {
   color: white;
   font-family: "ascendant";
-  font-weight: medium;
-  letter-spacing: 1px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
   font-size: 12px;
   text-align: center;
 }
@@ -39,7 +39,7 @@ h3 {
 }
 
 .text {
-  width: 70%;
+  width: 80%;
   margin-left: 10%;
 }
 
@@ -49,4 +49,14 @@ h3 {
 
 .policy {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 7px;
+  }
+
+  .text {
+    width: 70%;
+  }
 }
