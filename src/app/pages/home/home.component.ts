@@ -47,7 +47,7 @@ export class HomeComponent {
     const container = document.querySelector('.product-right');
     if (container) {
       if (this.mediaQuery.matches) container.scrollLeft -= 180;
-      else container.scrollLeft -= 270;
+      else container.scrollLeft -= 250;
     }
   }
 
@@ -55,7 +55,7 @@ export class HomeComponent {
     const container = document.querySelector('.product-right');
     if (container) {
       if (this.mediaQuery.matches) container.scrollLeft += 180;
-      else container.scrollLeft += 270;
+      else container.scrollLeft += 250;
     }
   }
 }
