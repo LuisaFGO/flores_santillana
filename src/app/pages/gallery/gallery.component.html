@@ -9,6 +9,12 @@
     </div>
   </div>
 
+  <app-detail-product
+    [product]="selectedProduct"
+    (closeModal)="selectedProduct = null"
+    #modal
+  ></app-detail-product>
+
   <div class="allProducts">
     <ng-container *ngFor="let product of products; let i = index">
       <div class="cardProduct">
@@ -16,7 +22,7 @@
         <div class="cardProduct-body">
           <h4 class="cardProduct-title">{{ product.name }}</h4>
           <p class="cardProduct-text">{{ product.description }}</p>
-          <button>Detail</button>
+          <button (click)="openModal(product)">Detail</button>
         </div>
       </div>
     </ng-container>

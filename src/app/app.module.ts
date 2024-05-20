@@ -14,7 +14,7 @@ import { PolicyCookiesComponent } from './modals/policy-cookies/policy-cookies.c
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { DetailProductComponent } from './detail-product/detail-product.component';
+import { DetailProductComponent } from './modals/detail-product/detail-product.component';
 
 @NgModule({
   declarations: [
