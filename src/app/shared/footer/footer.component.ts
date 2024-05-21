@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, ViewChild } from '@angular/core';
 import { LegalPolicyComponent } from 'src/app/modals/legal-policy/legal-policy.component';
 import { PolicyCookiesComponent } from 'src/app/modals/policy-cookies/policy-cookies.component';
 
@@ -9,14 +8,15 @@ import { PolicyCookiesComponent } from 'src/app/modals/policy-cookies/policy-coo
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
-  constructor(private modalService: NgbModal) {}
+  @ViewChild(LegalPolicyComponent) modalLegal!: LegalPolicyComponent;
+  @ViewChild(PolicyCookiesComponent) modalPolicy!: PolicyCookiesComponent;
 
   openLegalModal() {
-    this.modalService.open(LegalPolicyComponent);
+    this.modalLegal.showModal = true;
   }
 
   openCookiesModal() {
-    this.modalService.open(PolicyCookiesComponent);
+    this.modalPolicy.showModal = true;
   }
 
   logo = 'assets/logos/logoBlanco.png';

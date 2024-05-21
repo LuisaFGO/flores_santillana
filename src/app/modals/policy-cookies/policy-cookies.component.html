@@ -1,417 +1,424 @@
-<div id="modal-container" class="modal-container">
-  <div class="modal-header">
-    <h3>COOKIES POLICY</h3>
-  </div>
-  <div class="modal-body">
-    <p>
-      En cumplimiento con el deber de información recogido en el apartado 2º del
-      artículo 22 de la Ley 34/2002, de 11 de Julio, de Servicios de la Sociedad
-      de la Información y del Comercio Electrónico, la presente cláusula de
-      cookies tiene por finalidad informar a los usuarios de manera clara y
-      precisa sobre las cookies que utiliza el dominio web
-      https://floressantillana.com, propiedad de FLORES SANTILLANA SAS.
-    </p>
-    <p>
-      Una cookie es un fichero de pequeño tamaño que los sitios web envían al
-      navegador y descargan en su ordenador. Las cookies permiten que la página
-      web almacene y recupere la información sobre su visita, como el idioma y
-      otras opciones, con el fin de mejorar los servicios que se ofrecen y
-      contribuir a tener una mejor experiencia en la navegación para el usuario.
-    </p>
-    <p>
-      En el portal web se utilizan diferentes tipos de cookies con distintas
-      finalidades.
-    </p>
+<div class="modal" [ngStyle]="{ display: showModal ? 'block' : 'none' }">
+  <div id="modal-container" class="modal-container">
+    <div class="modal-header">
+      <h3>COOKIES POLICY</h3>
+    </div>
+    <button type="button" class="close" (click)="closeModalEvent()">x</button>
+    <div class="modal-body">
+      <p>
+        En cumplimiento con el deber de información recogido en el apartado 2º
+        del artículo 22 de la Ley 34/2002, de 11 de Julio, de Servicios de la
+        Sociedad de la Información y del Comercio Electrónico, la presente
+        cláusula de cookies tiene por finalidad informar a los usuarios de
+        manera clara y precisa sobre las cookies que utiliza el dominio web
+        https://floressantillana.com, propiedad de FLORES SANTILLANA SAS.
+      </p>
+      <p>
+        Una cookie es un fichero de pequeño tamaño que los sitios web envían al
+        navegador y descargan en su ordenador. Las cookies permiten que la
+        página web almacene y recupere la información sobre su visita, como el
+        idioma y otras opciones, con el fin de mejorar los servicios que se
+        ofrecen y contribuir a tener una mejor experiencia en la navegación para
+        el usuario.
+      </p>
+      <p>
+        En el portal web se utilizan diferentes tipos de cookies con distintas
+        finalidades.
+      </p>
 
-    <ul>
-      <li>
-        Cookies necesarias
-        <p>
-          Las cookies necesarias hacen la web utilizable activando funciones
-          básicas como la navegación en la página web y el acceso a áreas
-          seguras de la página. La página web no puede funcionar adecuadamente
-          sin estas cookies.
-        </p>
-      </li>
-      <li>
-        Cookies de preferencias
-        <p>
-          Las cookies de preferencias permiten al sitio web recordar información
-          que cambia la forma en la que el sitio web se comporta o se muestra,
-          como el idioma preferido o la región.
-        </p>
-      </li>
-      <li>
-        Cookies estadísticas
-        <p>
-          Las cookies estadísticas permiten entender cómo los visitantes
-          interactúan en la página web proporcionando información anónima.
-        </p>
-      </li>
-      <li>
-        Cookies de marketing
-        <p>
-          Las cookies de marketing se usan para rastrear a los usuarios a través
-          de las páginas webs con la intención de mostrarles anuncios que sean
-          relevantes para los usuarios.
-        </p>
-      </li>
-      <li>
-        Cookies utilizadas en la web
-        <p>A continuación, se enumeran las cookies empleadas:</p>
-      </li>
-      <li>
-        EMPRESAS - Cookies utilizadas
-        <p>
-          Las cookies estadísticas permiten entender cómo los visitantes
-          interactúan en la página web proporcionando información anónima.
-        </p>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          Cookies necesarias
+          <p>
+            Las cookies necesarias hacen la web utilizable activando funciones
+            básicas como la navegación en la página web y el acceso a áreas
+            seguras de la página. La página web no puede funcionar adecuadamente
+            sin estas cookies.
+          </p>
+        </li>
+        <li>
+          Cookies de preferencias
+          <p>
+            Las cookies de preferencias permiten al sitio web recordar
+            información que cambia la forma en la que el sitio web se comporta o
+            se muestra, como el idioma preferido o la región.
+          </p>
+        </li>
+        <li>
+          Cookies estadísticas
+          <p>
+            Las cookies estadísticas permiten entender cómo los visitantes
+            interactúan en la página web proporcionando información anónima.
+          </p>
+        </li>
+        <li>
+          Cookies de marketing
+          <p>
+            Las cookies de marketing se usan para rastrear a los usuarios a
+            través de las páginas webs con la intención de mostrarles anuncios
+            que sean relevantes para los usuarios.
+          </p>
+        </li>
+        <li>
+          Cookies utilizadas en la web
+          <p>A continuación, se enumeran las cookies empleadas:</p>
+        </li>
+        <li>
+          EMPRESAS - Cookies utilizadas
+          <p>
+            Las cookies estadísticas permiten entender cómo los visitantes
+            interactúan en la página web proporcionando información anónima.
+          </p>
+        </li>
+      </ul>
 
-    <table class="table">
-      <thead class="font">
-        <tr>
-          <th scope="col">Nombre</th>
-          <th scope="col">Descripción</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">_GA</th>
-          <td class="font">
-            Registra una identificación única que se utiliza para generar datos
-            estadísticos acerca de cómo utiliza el visitante el sitio web.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">_GAT</th>
-          <td class="font">
-            RSe utiliza para controlar la tasa de peticiones.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">_GID</th>
-          <td class="font">
-            Se utiliza para enviar datos a Google Analytics sobre el dispositivo
-            del visitante y su comportamiento. Rastrea al visitante a través de
-            dispositivos y canales de marketing.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">_gat_norec</th>
-          <td class="font">
-            Cookies utilizadas por Google Analytics que contiene un
-            identificador anónimo usado para distinguir usuarios.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">CONSENT</th>
-          <td class="font">
-            Almacena el estado de consentimiento de cookies del usuario para el
-            dominio actual.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">NID</th>
-          <td class="font">
-            Esta cookie es utilizada por Google para almacenar las preferencias
-            del usuario y la información durante la visualización de las páginas
-            con los mapas de Google.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">DSID</th>
-          <td class="font">
-            Se trata de una cookie de publicidad para mostrar anuncios más
-            relevantes.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">CONSENT</th>
-          <td class="font">
-            Contiene un valor generado aleatoriamente único que permite a la
-            Plataforma para distinguir navegadores y dispositivos. Esta
-            información es utilizada para medir el rendimiento de los anuncios y
-            proporcionar recomendaciones relativas a productos basadas en datos
-            estadísticos.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">APISID</th>
-          <td class="font">
-            Al crear o iniciar sesión en una cuenta de Google se almacenan las
-            cookies con el fin de permanecer conectado a esa cuenta de Google al
-            visitar sus servicios de nuevo.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3PSID</th>
-          <td class="font">
-            Utilizamos cookies de seguridad para autenticar a los usuarios,
-            evitar el uso fraudulento de credenciales de inicio de sesión y
-            proteger los datos de los usuarios de partes no autorizadas.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">HSID</th>
-          <td class="font">
-            Utilizamos cookies de seguridad para autenticar a los usuarios,
-            evitar el uso fraudulento de credenciales de inicio de sesión y
-            proteger los datos de los usuarios de partes no autorizadas.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">SIDCC</th>
-          <td class="font">
-            Esta cookie es utilizada por Google para proveer servicios y extraer
-            información anónima sobre la navegación.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">OGP</th>
-          <td class="font">
-            Esta cookie es utilizada por Google para proveer servicios y extraer
-            información anónima sobre la navegación.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">OTZ</th>
-          <td class="font">
-            Se utiliza para personalizar los anuncios que se muestran en los
-            servicios de Google.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">SAPISID</th>
-          <td class="font">
-            Estas cookies son utilizadas por Google para almacenar las
-            preferencias del usuario y la información durante la visualización
-            de las páginas con los mapas de Google en ellos.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">_gat_rec</th>
-          <td class="font">
-            Cookies utilizadas por Google Analytics que contiene un
-            identificador anónimo usado para distinguir usuarios.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">bku</th>
-          <td class="font">Funcionamiento interno de AddThis.</td>
-        </tr>
-        <tr>
-          <th scope="row">loc</th>
-          <td class="font">
-            Geolocalización, que se utiliza para ayudar a los proveedores a
-            determinar dónde están geográficamente ubicados (a nivel de estado)
-            los usuarios que comparten información entre sí.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">mus</th>
-          <td class="font">
-            Permite a los visitantes de nuestro sitio web compartir sus
-            contenidos en redes sociales.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">na_id</th>
-          <td class="font">
-            Permite a los sitios web y a sus usuarios compartir fácilmente el
-            contenido con los demás, a través de iconos de intercambio y de los
-            destinos de bookmarking social. Las cookies AddThis se utilizan con
-            el fin de habilitar el contenido para ser compartido. AddThis
-            también se utiliza para recopilar información sobre cómo se comparte
-            contenido del sitio web.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">na_tc</th>
-          <td class="font">
-            Permite a los sitios web y a sus usuarios compartir fácilmente el
-            contenido con los demás, a través de iconos de intercambio y de los
-            destinos de bookmarking social. Las cookies AddThis se utilizan con
-            el fin de habilitar el contenido para ser compartido. AddThis
-            también se utiliza para recopilar información sobre cómo se comparte
-            contenido del sitio web.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">act</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">c_user</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">fr</th>
-          <td class="font">
-            Se trata de la cookie de publicidad principal de Facebook. Se
-            utiliza para ofrecer, analizar y mejorar la relevancia de los
-            anuncios.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Pl</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Presence</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Sb</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">Spin</th>
-          <td class="font">Cookies de publicidad.</td>
-        </tr>
-        <tr>
-          <th scope="row">Wd</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">xs</th>
-          <td class="font">
-            Cookies necesarios para el complemento social de Facebook.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">locale</th>
-          <td class="font">
-            Esta cookie contiene la configuración regional de visualización del
-            último usuario conectado en este navegador. Esta cookie parece que
-            se establece sólo cuando el usuario cierra la sesión.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">cc_cookie_accept</th>
-          <td class="font">
-            Se utilizan para comprobar si el visitante acepta las cookies.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">cc_cookie_decline</th>
-          <td class="font">
-            Se utilizan para comprobar si el visitante rechaza las cookies.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">ASPXAUTH</th>
-          <td class="font">
-            Se utiliza para almacenar un identificador único para la sesión.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">ASP.NET_SessionId</th>
-          <td class="font">
-            Se utiliza para almacenar un identificador único para la sesión..
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">_RequestVerificationToken</th>
-          <td class="font">
-            De la utilización de AntiForgeryToken que se utiliza para prevenir
-            ataques de solicitud de falsificacion Cross-Site.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">tfw_exp</th>
-          <td class="font">
-            Cookie usada por twitter para mostrar publicidad.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">uid</th>
-          <td class="font">
-            Esta cookie es establecida por CloudFare. Esta cookie se utiliza
-            para identificar clientes individuales detrás de una dirección IP
-            compartida y aplicar configuraciones de seguridad por cliente. No
-            corresponde a ninguna identificación de usuario en la aplicación web
-            y no almacena ninguna información de identificación personal.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">uvc</th>
-          <td class="font">
-            Esta cookie se utiliza para medir el número y el comportamiento de
-            los visitantes del sitio web de forma anónima. Los datos incluyen el
-            número de visitas, la duración promedio de la visita en el sitio
-            web, las páginas visitadas, etc. con el fin de comprender mejor las
-            preferencias del usuario para los anuncios personalizados.
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">1P_JAR</th>
-          <td class="font">Transfiere datos a Google.</td>
-        </tr>
-        <tr>
-          <th scope="row">datr</th>
-          <td class="font">
-            El propósito es identificar el navegador web que se utiliza para
-            conectarse a Facebook independientemente del usuario que ha entrado.
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table">
+        <thead class="font">
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">_GA</th>
+            <td class="font">
+              Registra una identificación única que se utiliza para generar
+              datos estadísticos acerca de cómo utiliza el visitante el sitio
+              web.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">_GAT</th>
+            <td class="font">
+              RSe utiliza para controlar la tasa de peticiones.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">_GID</th>
+            <td class="font">
+              Se utiliza para enviar datos a Google Analytics sobre el
+              dispositivo del visitante y su comportamiento. Rastrea al
+              visitante a través de dispositivos y canales de marketing.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">_gat_norec</th>
+            <td class="font">
+              Cookies utilizadas por Google Analytics que contiene un
+              identificador anónimo usado para distinguir usuarios.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CONSENT</th>
+            <td class="font">
+              Almacena el estado de consentimiento de cookies del usuario para
+              el dominio actual.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">NID</th>
+            <td class="font">
+              Esta cookie es utilizada por Google para almacenar las
+              preferencias del usuario y la información durante la visualización
+              de las páginas con los mapas de Google.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">DSID</th>
+            <td class="font">
+              Se trata de una cookie de publicidad para mostrar anuncios más
+              relevantes.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CONSENT</th>
+            <td class="font">
+              Contiene un valor generado aleatoriamente único que permite a la
+              Plataforma para distinguir navegadores y dispositivos. Esta
+              información es utilizada para medir el rendimiento de los anuncios
+              y proporcionar recomendaciones relativas a productos basadas en
+              datos estadísticos.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">APISID</th>
+            <td class="font">
+              Al crear o iniciar sesión en una cuenta de Google se almacenan las
+              cookies con el fin de permanecer conectado a esa cuenta de Google
+              al visitar sus servicios de nuevo.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3PSID</th>
+            <td class="font">
+              Utilizamos cookies de seguridad para autenticar a los usuarios,
+              evitar el uso fraudulento de credenciales de inicio de sesión y
+              proteger los datos de los usuarios de partes no autorizadas.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">HSID</th>
+            <td class="font">
+              Utilizamos cookies de seguridad para autenticar a los usuarios,
+              evitar el uso fraudulento de credenciales de inicio de sesión y
+              proteger los datos de los usuarios de partes no autorizadas.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SIDCC</th>
+            <td class="font">
+              Esta cookie es utilizada por Google para proveer servicios y
+              extraer información anónima sobre la navegación.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">OGP</th>
+            <td class="font">
+              Esta cookie es utilizada por Google para proveer servicios y
+              extraer información anónima sobre la navegación.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">OTZ</th>
+            <td class="font">
+              Se utiliza para personalizar los anuncios que se muestran en los
+              servicios de Google.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SAPISID</th>
+            <td class="font">
+              Estas cookies son utilizadas por Google para almacenar las
+              preferencias del usuario y la información durante la visualización
+              de las páginas con los mapas de Google en ellos.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">_gat_rec</th>
+            <td class="font">
+              Cookies utilizadas por Google Analytics que contiene un
+              identificador anónimo usado para distinguir usuarios.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">bku</th>
+            <td class="font">Funcionamiento interno de AddThis.</td>
+          </tr>
+          <tr>
+            <th scope="row">loc</th>
+            <td class="font">
+              Geolocalización, que se utiliza para ayudar a los proveedores a
+              determinar dónde están geográficamente ubicados (a nivel de
+              estado) los usuarios que comparten información entre sí.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">mus</th>
+            <td class="font">
+              Permite a los visitantes de nuestro sitio web compartir sus
+              contenidos en redes sociales.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">na_id</th>
+            <td class="font">
+              Permite a los sitios web y a sus usuarios compartir fácilmente el
+              contenido con los demás, a través de iconos de intercambio y de
+              los destinos de bookmarking social. Las cookies AddThis se
+              utilizan con el fin de habilitar el contenido para ser compartido.
+              AddThis también se utiliza para recopilar información sobre cómo
+              se comparte contenido del sitio web.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">na_tc</th>
+            <td class="font">
+              Permite a los sitios web y a sus usuarios compartir fácilmente el
+              contenido con los demás, a través de iconos de intercambio y de
+              los destinos de bookmarking social. Las cookies AddThis se
+              utilizan con el fin de habilitar el contenido para ser compartido.
+              AddThis también se utiliza para recopilar información sobre cómo
+              se comparte contenido del sitio web.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">act</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">c_user</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">fr</th>
+            <td class="font">
+              Se trata de la cookie de publicidad principal de Facebook. Se
+              utiliza para ofrecer, analizar y mejorar la relevancia de los
+              anuncios.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Pl</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Presence</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Sb</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Spin</th>
+            <td class="font">Cookies de publicidad.</td>
+          </tr>
+          <tr>
+            <th scope="row">Wd</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">xs</th>
+            <td class="font">
+              Cookies necesarios para el complemento social de Facebook.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">locale</th>
+            <td class="font">
+              Esta cookie contiene la configuración regional de visualización
+              del último usuario conectado en este navegador. Esta cookie parece
+              que se establece sólo cuando el usuario cierra la sesión.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">cc_cookie_accept</th>
+            <td class="font">
+              Se utilizan para comprobar si el visitante acepta las cookies.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">cc_cookie_decline</th>
+            <td class="font">
+              Se utilizan para comprobar si el visitante rechaza las cookies.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">ASPXAUTH</th>
+            <td class="font">
+              Se utiliza para almacenar un identificador único para la sesión.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">ASP.NET_SessionId</th>
+            <td class="font">
+              Se utiliza para almacenar un identificador único para la sesión..
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">_RequestVerificationToken</th>
+            <td class="font">
+              De la utilización de AntiForgeryToken que se utiliza para prevenir
+              ataques de solicitud de falsificacion Cross-Site.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">tfw_exp</th>
+            <td class="font">
+              Cookie usada por twitter para mostrar publicidad.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">uid</th>
+            <td class="font">
+              Esta cookie es establecida por CloudFare. Esta cookie se utiliza
+              para identificar clientes individuales detrás de una dirección IP
+              compartida y aplicar configuraciones de seguridad por cliente. No
+              corresponde a ninguna identificación de usuario en la aplicación
+              web y no almacena ninguna información de identificación personal.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">uvc</th>
+            <td class="font">
+              Esta cookie se utiliza para medir el número y el comportamiento de
+              los visitantes del sitio web de forma anónima. Los datos incluyen
+              el número de visitas, la duración promedio de la visita en el
+              sitio web, las páginas visitadas, etc. con el fin de comprender
+              mejor las preferencias del usuario para los anuncios
+              personalizados.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">1P_JAR</th>
+            <td class="font">Transfiere datos a Google.</td>
+          </tr>
+          <tr>
+            <th scope="row">datr</th>
+            <td class="font">
+              El propósito es identificar el navegador web que se utiliza para
+              conectarse a Facebook independientemente del usuario que ha
+              entrado.
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <p>
-      Esta información se actualizará en la medida que cambien los servicios
-      ofrecidos en este sitio web.
-    </p>
+      <p>
+        Esta información se actualizará en la medida que cambien los servicios
+        ofrecidos en este sitio web.
+      </p>
 
-    <h4>Cómo modificar la configuración de las cookies</h4>
-    <p>
-      El usuario puede restringir, bloquear o borrar las cookies de FLORES
-      SANTILLANA SAS o cualquier otra página web desde su navegador. En cada
-      navegador la operativa es diferente, puede encontrar cómo hacerlo en el
-      menú de ayuda de su navegador, en el cual se establece el procedimiento
-      para su eliminación. Para más información puede acceder a las siguientes
-      páginas web:
-    </p>
-    <ul>
-      <li>
-        Google Chrome:
-        <p>
-          https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=es
-        </p>
-      </li>
-      <li>
-        Mozilla Firefox:
-        <p>
-          https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias
-        </p>
-      </li>
-      <li>
-        Safari:
-        <p>https://support.apple.com/es-es/guide/safari/sfri11471/mac</p>
-      </li>
-      <li>
-        Internet Explorer:
-        <p>
-          https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer
-        </p>
-      </li>
-    </ul>
-    <p>
-      Es posible que al deshabilitar las cookies la página web no funcione
-      correctamente o no pueda acceder a determinadas funciones de la misma.
-    </p>
+      <h4>Cómo modificar la configuración de las cookies</h4>
+      <p>
+        El usuario puede restringir, bloquear o borrar las cookies de FLORES
+        SANTILLANA SAS o cualquier otra página web desde su navegador. En cada
+        navegador la operativa es diferente, puede encontrar cómo hacerlo en el
+        menú de ayuda de su navegador, en el cual se establece el procedimiento
+        para su eliminación. Para más información puede acceder a las siguientes
+        páginas web:
+      </p>
+      <ul>
+        <li>
+          Google Chrome:
+          <p>
+            https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=es
+          </p>
+        </li>
+        <li>
+          Mozilla Firefox:
+          <p>
+            https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias
+          </p>
+        </li>
+        <li>
+          Safari:
+          <p>https://support.apple.com/es-es/guide/safari/sfri11471/mac</p>
+        </li>
+        <li>
+          Internet Explorer:
+          <p>
+            https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer
+          </p>
+        </li>
+      </ul>
+      <p>
+        Es posible que al deshabilitar las cookies la página web no funcione
+        correctamente o no pueda acceder a determinadas funciones de la misma.
+      </p>
+    </div>
   </div>
 </div>
