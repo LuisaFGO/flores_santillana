@@ -62,13 +62,16 @@ ul {
 ul p {
   font-family: "ascendant";
   font-weight: normal;
+  word-break: break-word;
 }
 
 table {
   width: 100%;
 }
+
 th {
-  width: 150px;
+  width: 20%;
+  word-break: break-word;
 }
 
 @media (max-width: 768px) {
