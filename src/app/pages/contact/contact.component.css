@@ -1,0 +1,18 @@
+.text_error {
+  color: #7c2520;
+  font-family: "ascendant";
+  font-weight: normal;
+  font-size: 14px;
+}
+
+p,
+.terms {
+  font-size: 12px;
+  font-family: "ascendant";
+  font-weight: medium;
+}
+
+label {
+  font-family: "ascendant";
+  font-weight: bold;
+}

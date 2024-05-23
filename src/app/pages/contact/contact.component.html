@@ -11,7 +11,10 @@
           (formContact.get('name')?.dirty || formContact.get('name')?.touched)
         "
       >
-        <div *ngIf="formContact.get('name')?.errors?.['required']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('name')?.errors?.['required']"
+        >
           Name is required
         </div>
       </div>
@@ -26,7 +29,10 @@
           (formContact.get('phone')?.dirty || formContact.get('phone')?.touched)
         "
       >
-        <div *ngIf="formContact.get('phone')?.errors?.['required']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('phone')?.errors?.['required']"
+        >
           Phone is required
         </div>
       </div>
@@ -41,10 +47,16 @@
           (formContact.get('email')?.dirty || formContact.get('email')?.touched)
         "
       >
-        <div *ngIf="formContact.get('email')?.errors?.['required']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('email')?.errors?.['required']"
+        >
           Email is required
         </div>
-        <div *ngIf="formContact.get('email')?.errors?.['email']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('email')?.errors?.['email']"
+        >
           The email is not valid
         </div>
       </div>
@@ -60,7 +72,10 @@
             formContact.get('message')?.touched)
         "
       >
-        <div *ngIf="formContact.get('message')?.errors?.['required']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('message')?.errors?.['required']"
+        >
           Message is required
         </div>
       </div>
@@ -68,7 +83,7 @@
 
     <div>
       <input type="checkbox" id="terms" formControlName="terms" required />
-      <label for="terms"
+      <label for="terms" class="terms"
         >I have read and accept the legal notice and privacy policy</label
       >
       <div
@@ -77,13 +92,23 @@
           (formContact.get('terms')?.dirty || formContact.get('terms')?.touched)
         "
       >
-        <div *ngIf="formContact.get('terms')?.errors?.['required']">
+        <div
+          class="text_error"
+          *ngIf="formContact.get('terms')?.errors?.['required']"
+        >
           You must agree to terms and conditions
         </div>
       </div>
     </div>
 
     <button type="submit" [disabled]="formContact.invalid">Submit</button>
+    <p>
+      For the purposes provided for in the General Data Protection Regulation
+      (RGPD), you are informed that the personal data you provide us through
+      this form will be incorporated into a file of the entity FLORES SANTILLANA
+      SAS. Puede ver información detallada en nuestro Aviso Legal y Política de
+      Privacidad.
+    </p>
   </form>
 </div>
 
