@@ -1,115 +1,186 @@
 <app-navbar></app-navbar>
 
-<div>
-  <form [formGroup]="formContact" (ngSubmit)="submitForm()">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" formControlName="name" required />
-      <div
-        *ngIf="
-          formContact.get('name')?.invalid &&
-          (formContact.get('name')?.dirty || formContact.get('name')?.touched)
-        "
-      >
-        <div
-          class="text_error"
-          *ngIf="formContact.get('name')?.errors?.['required']"
+<div class="contact">
+  <div class="all_contact d-flex flex-column flex-lg-row">
+    <div class="contact-left">
+      <img [src]="logo" alt="logo rojo" class="logo_img" />
+      <div class="icons-container">
+        <a class="icon-link" href="mailto:flores.santillana02@gmail.com">
+          <i class="bi bi-envelope"></i>
+          <span>flores.santillana02@gmail.com</span>
+        </a>
+        <a class="icon-link" href="tel:+573173698643">
+          <i class="bi bi-telephone"></i>
+          <span>+573173698643</span>
+        </a>
+        <a
+          class="icon-link"
+          href="https://www.instagram.com/floressantillana_/?hl=es"
         >
-          Name is required
-        </div>
+          <i class="bi bi-instagram"></i>
+          <span>Flores Santillana S.A.S</span>
+        </a>
       </div>
+      <h5>Thank you for trusting in our service</h5>
     </div>
-
-    <div>
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" formControlName="phone" required />
-      <div
-        *ngIf="
-          formContact.get('phone')?.invalid &&
-          (formContact.get('phone')?.dirty || formContact.get('phone')?.touched)
-        "
+    <div class="contact-right flex-nowrap overflow-hidden">
+      <form
+        [formGroup]="formContact"
+        (ngSubmit)="submitForm()"
+        class="form-container"
       >
-        <div
-          class="text_error"
-          *ngIf="formContact.get('phone')?.errors?.['required']"
-        >
-          Phone is required
+        <div>
+          <label for="name">Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            formControlName="name"
+            required
+          />
+          <div
+            *ngIf="
+              formContact.get('name')?.invalid &&
+              (formContact.get('name')?.dirty ||
+                formContact.get('name')?.touched)
+            "
+          >
+            <div
+              class="text_error"
+              *ngIf="formContact.get('name')?.errors?.['required']"
+            >
+              Name is required
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div>
+          <label for="phone">Phone:</label>
+          <input
+            class="input"
+            type="tel"
+            id="phone"
+            formControlName="phone"
+            required
+          />
+          <div
+            *ngIf="
+              formContact.get('phone')?.invalid &&
+              (formContact.get('phone')?.dirty ||
+                formContact.get('phone')?.touched)
+            "
+          >
+            <div
+              class="text_error"
+              *ngIf="formContact.get('phone')?.errors?.['required']"
+            >
+              Phone is required
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            formControlName="email"
+            required
+          />
+          <div
+            *ngIf="
+              formContact.get('email')?.invalid &&
+              (formContact.get('email')?.dirty ||
+                formContact.get('email')?.touched)
+            "
+          >
+            <div
+              class="text_error"
+              *ngIf="formContact.get('email')?.errors?.['required']"
+            >
+              Email is required
+            </div>
+            <div
+              class="text_error"
+              *ngIf="formContact.get('email')?.errors?.['email']"
+            >
+              The email is not valid
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            class="input"
+            id="message"
+            formControlName="message"
+            required
+          ></textarea>
+          <div
+            *ngIf="
+              formContact.get('message')?.invalid &&
+              (formContact.get('message')?.dirty ||
+                formContact.get('message')?.touched)
+            "
+          >
+            <div
+              class="text_error"
+              *ngIf="formContact.get('message')?.errors?.['required']"
+            >
+              Message is required
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-container">
+            <div class="checkbox-label-container">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="terms"
+                formControlName="terms"
+                required
+              />
+              <label for="terms" class="terms"
+                >I have read and accept the legal notice and privacy
+                policy</label
+              >
+            </div>
+            <div
+              class="text_error"
+              *ngIf="
+                formContact.get('terms')?.invalid &&
+                (formContact.get('terms')?.dirty ||
+                  formContact.get('terms')?.touched)
+              "
+            >
+              <div *ngIf="formContact.get('terms')?.errors?.['required']">
+                You must agree to terms and conditions
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          [disabled]="formContact.invalid"
+          class="submit-btn"
+        >
+          SUBMIT
+        </button>
+        <p>
+          For the purposes provided for in the General Data Protection
+          Regulation (RGPD), you are informed that the personal data you provide
+          us through this form will be incorporated into a file of the entity
+          FLORES SANTILLANA SAS. Puede ver información detallada en nuestro
+          Aviso Legal y Política de Privacidad.
+        </p>
+      </form>
     </div>
-
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" formControlName="email" required />
-      <div
-        *ngIf="
-          formContact.get('email')?.invalid &&
-          (formContact.get('email')?.dirty || formContact.get('email')?.touched)
-        "
-      >
-        <div
-          class="text_error"
-          *ngIf="formContact.get('email')?.errors?.['required']"
-        >
-          Email is required
-        </div>
-        <div
-          class="text_error"
-          *ngIf="formContact.get('email')?.errors?.['email']"
-        >
-          The email is not valid
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" formControlName="message" required></textarea>
-      <div
-        *ngIf="
-          formContact.get('message')?.invalid &&
-          (formContact.get('message')?.dirty ||
-            formContact.get('message')?.touched)
-        "
-      >
-        <div
-          class="text_error"
-          *ngIf="formContact.get('message')?.errors?.['required']"
-        >
-          Message is required
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <input type="checkbox" id="terms" formControlName="terms" required />
-      <label for="terms" class="terms"
-        >I have read and accept the legal notice and privacy policy</label
-      >
-      <div
-        *ngIf="
-          formContact.get('terms')?.invalid &&
-          (formContact.get('terms')?.dirty || formContact.get('terms')?.touched)
-        "
-      >
-        <div
-          class="text_error"
-          *ngIf="formContact.get('terms')?.errors?.['required']"
-        >
-          You must agree to terms and conditions
-        </div>
-      </div>
-    </div>
-
-    <button type="submit" [disabled]="formContact.invalid">Submit</button>
-    <p>
-      For the purposes provided for in the General Data Protection Regulation
-      (RGPD), you are informed that the personal data you provide us through
-      this form will be incorporated into a file of the entity FLORES SANTILLANA
-      SAS. Puede ver información detallada en nuestro Aviso Legal y Política de
-      Privacidad.
-    </p>
-  </form>
+  </div>
 </div>
 
 <iframe

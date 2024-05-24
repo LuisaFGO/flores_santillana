@@ -9,6 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
   formContact: FormGroup;
 
+  logo = 'assets/logos/logo_negro.png';
+
   constructor(private formBuilder: FormBuilder) {
     this.formContact = this.formBuilder.group({
       name: ['', Validators.required],
