@@ -197,6 +197,10 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 3%;
+}
+
+.items-question {
   background-color: rgb(226, 225, 225);
   padding-top: 4%;
   padding-bottom: 2%;
