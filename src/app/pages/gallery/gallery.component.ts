@@ -53,9 +53,9 @@ export class GalleryComponent {
         { name: 'Mini', text: '(60 stems per box - QB)- 10-14cm' },
       ],
       photos: [
-        'assets/photosDetail/hydrangeas_1.jpg',
-        'assets/photosDetail/hydrangeas_2.jpg',
-        'assets/photosDetail/hydrangeas_3.jpg',
+        { img: 'assets/photosDetail/hydrangeas_1.jpg', name: 'hydrangeas_1' },
+        { img: 'assets/photosDetail/hydrangeas_2.jpg', name: 'hydrangeas_2' },
+        { img: 'assets/photosDetail/hydrangeas_3.jpg', name: 'hydrangeas_3' },
       ],
     },
     {

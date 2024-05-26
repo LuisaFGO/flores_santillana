@@ -2,8 +2,11 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-body d-flex">
-        <div class="img-container">
-          <img [src]="product?.img" class="img-fluid" [alt]="product?.name" />
+        <div
+          class="img-container"
+          *ngFor="let photo of product?.photos; let i = index"
+        >
+          <img [src]="photo?.img" class="img-fluid" [alt]="photo?.name" />
         </div>
         <div class="content-container">
           <div class="modal-header">
