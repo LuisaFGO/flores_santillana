@@ -52,6 +52,11 @@ export class GalleryComponent {
         { name: 'Select', text: '(40 stems per box - QB)- 16-20cm' },
         { name: 'Mini', text: '(60 stems per box - QB)- 10-14cm' },
       ],
+      photos: [
+        'assets/photosDetail/hydrangeas_1.jpg',
+        'assets/photosDetail/hydrangeas_2.jpg',
+        'assets/photosDetail/hydrangeas_3.jpg',
+      ],
     },
     {
       name: 'Ruscus',
