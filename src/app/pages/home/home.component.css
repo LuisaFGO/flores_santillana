@@ -101,8 +101,12 @@ button:hover {
   background-color: #7c2520;
   color: white;
   border: none;
-  font-size: 16px;
   margin: 0 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 1rem;
 }
 
 /* advantages */
@@ -195,12 +199,13 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .items-question {
   background-color: rgb(226, 225, 225);
-  padding-top: 4%;
+  padding-top: 3%;
   padding-bottom: 2%;
 }
 
@@ -228,11 +233,6 @@ button:hover {
     margin-left: 30%;
   }
 
-  .items-question {
-    width: 70%;
-    margin-left: 15%;
-  }
-
   .product-left {
     width: 25%;
   }
@@ -252,5 +252,19 @@ button:hover {
 
   .arrow-btn {
     font-size: 10px;
+  }
+
+  .text-question {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
   }
 }

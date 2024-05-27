@@ -22,8 +22,12 @@
     </div>
   </div>
   <div class="arrows-container">
-    <button class="arrow-btn" (click)="scrollLeft()">Previous</button>
-    <button class="arrow-btn" (click)="scrollRight()">Next</button>
+    <button class="arrow-btn" (click)="scrollLeft()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="arrow-btn" (click)="scrollRight()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
   </div>
 </div>
 
