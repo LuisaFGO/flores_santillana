@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 8%;
+  margin-bottom: 6%;
 }
 
 h5 {
@@ -55,6 +56,8 @@ h5 {
 
 .contact-right {
   margin-bottom: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .form-container {
@@ -157,7 +160,4 @@ textarea {
   .contact-right {
     flex-basis: 60%;
   }
-}
-
-@media (max-width: 768px) {
 }
