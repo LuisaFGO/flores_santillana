@@ -38,6 +38,10 @@
   display: block;
 }
 
+.nav-link.active {
+  color: #7c2520;
+}
+
 @media (min-width: 992px) {
   .d-lg-none {
     display: none;
