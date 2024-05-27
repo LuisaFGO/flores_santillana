@@ -2,11 +2,32 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-body d-flex">
-        <div
-          class="img-container"
-          *ngFor="let photo of product?.photos; let i = index"
-        >
-          <img [src]="photo?.img" class="img-fluid" [alt]="photo?.name" />
+        <div id="productCarousel" class="carousel_slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              class="carousel-item"
+              [class.active]="i === currentSlide"
+              *ngFor="let photo of product?.photos; let i = index"
+            >
+              <img
+                [src]="photo?.img"
+                class="d-block w-100"
+                [alt]="photo?.name"
+              />
+              <a class="carousel-control-prev" (click)="prevSlide()">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a class="carousel-control-next" (click)="nextSlide()">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="content-container">
           <div class="modal-header">

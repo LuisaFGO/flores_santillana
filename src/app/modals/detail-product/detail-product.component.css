@@ -14,7 +14,6 @@
 
 .modal-dialog {
   max-width: 60vw;
-  max-height: 30vh;
   margin: 2rem auto 1.75rem;
 }
 
@@ -33,22 +32,35 @@
   display: flex;
   flex-direction: row;
   padding: 0;
+  height: 80vh;
 }
 
-.img-container {
+.carousel_slide {
   flex: 1;
   padding: 1rem;
+  height: 100%;
 }
 
-.img-container img {
+.carousel-inner {
   height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
   object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .content-container {
   flex: 1;
   display: flex;
   flex-direction: column;
+  max-height: 80vh; /* Agregar esta línea */
+  overflow-y: auto; /* Agregar esta línea */
 }
 
 .modal-header {
@@ -99,6 +111,7 @@ p {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .btn-contact {
@@ -122,6 +135,12 @@ p {
   padding: 4%;
 }
 
+/* carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+}
+
 @media (max-width: 767px) {
   .modal-dialog {
     max-width: 90vw;
@@ -130,16 +149,6 @@ p {
 
   .modal-body {
     flex-direction: column;
-  }
-
-  .img-container {
-    order: 1;
-    max-height: 60vh;
-    overflow: hidden;
-  }
-
-  .img-container img {
-    width: 100%;
   }
 
   .content-container {
