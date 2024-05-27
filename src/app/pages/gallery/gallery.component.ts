@@ -33,12 +33,22 @@ export class GalleryComponent {
           text: '(60 stems per box - QB)- 12 bouquets of 5 stems - 11-15 cm',
         },
       ],
+      photos: [
+        { img: 'assets/photosDetail/bParadise_1.jpg', name: 'bParadise_1' },
+        { img: 'assets/photosDetail/bParadise_2.jpg', name: 'bParadise_2' },
+        { img: 'assets/photosDetail/bParadise_3.jpg', name: 'bParadise_3' },
+      ],
     },
     {
       name: 'Crops',
       description: 'Descripción del producto 2',
       img: 'assets/imgProducts/crops.jpg',
       allDescription: 'hola',
+      photos: [
+        { img: 'assets/photosDetail/crops_1.jpg', name: 'crops_1' },
+        { img: 'assets/photosDetail/crops_2.jpg', name: 'crops_2' },
+        { img: 'assets/photosDetail/crops_3.jpg', name: 'crops_3' },
+      ],
     },
     {
       name: 'Hydrangeas',
@@ -71,12 +81,23 @@ export class GalleryComponent {
           text: '(400 stems per box - QB)- 40 bouquets of 10 stems',
         },
       ],
+      photos: [
+        { img: 'assets/photosDetail/ruscus_1.jpg', name: 'ruscus_1' },
+        { img: 'assets/photosDetail/ruscus_2.jpg', name: 'ruscus_2' },
+        { img: 'assets/photosDetail/ruscus_3.jpg', name: 'ruscus_3' },
+      ],
     },
     {
       name: 'Post harvest',
       description: 'Descripción del producto 5',
       img: 'assets/imgProducts/postHarvest.jpg',
       allDescription: 'hola',
+      photos: [
+        { img: 'assets/photosDetail/postH_1.jpg', name: 'postH_1' },
+        { img: 'assets/photosDetail/postH_2.jpg', name: 'postH_2' },
+        { img: 'assets/photosDetail/postH_3.jpg', name: 'postH_3' },
+        { img: 'assets/photosDetail/postH_4.jpg', name: 'postH_4' },
+      ],
     },
   ];
 
