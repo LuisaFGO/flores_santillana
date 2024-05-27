@@ -102,7 +102,6 @@ export class GalleryComponent {
   ];
 
   openModal(product: any) {
-    console.log('openModal llamado con:', product);
     this.selectedProduct = product;
     this.modal.showModal = true;
   }
