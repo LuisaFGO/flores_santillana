@@ -7,7 +7,7 @@
       <div class="icons-container">
         <a class="icon-link" href="mailto:flores.santillana02@gmail.com">
           <i class="bi bi-envelope"></i>
-          <span>flores.santillana02@gmail.com</span>
+          <span>flores.santillana02&#64;gmail.com</span>
         </a>
         <a class="icon-link" href="tel:+573173698643">
           <i class="bi bi-telephone"></i>
@@ -24,6 +24,12 @@
       <h5>Thank you for trusting in our service</h5>
     </div>
     <div class="contact-right flex-nowrap overflow-hidden">
+      <div *ngIf="successMessage" class="alert alert-success" role="alert">
+        {{ successMessage }}
+      </div>
+      <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+      </div>
       <form
         [formGroup]="formContact"
         (ngSubmit)="submitForm()"
@@ -51,6 +57,12 @@
             >
               Name is required
             </div>
+            <div
+              class="text_error"
+              *ngIf="formContact.get('name')?.errors?.['pattern']"
+            >
+              The name is not valid
+            </div>
           </div>
         </div>
 
@@ -75,6 +87,12 @@
               *ngIf="formContact.get('phone')?.errors?.['required']"
             >
               Phone is required
+            </div>
+            <div
+              class="text_error"
+              *ngIf="formContact.get('phone')?.errors?.['pattern']"
+            >
+              The phone is not valid
             </div>
           </div>
         </div>

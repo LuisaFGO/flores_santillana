@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from 'src/app/services/form.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,13 +9,18 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
   formContact: FormGroup;
+  public successMessage: string = '';
+  public errorMessage: string = '';
 
   logo = 'assets/logos/logo_negro.png';
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private apiService: ApiService
+  ) {
     this.formContact = this.formBuilder.group({
-      name: ['', Validators.required],
-      phone: ['', Validators.required],
+      name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+$/)]],
+      phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
       terms: [false, Validators.requiredTrue],
@@ -23,9 +29,32 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  clearMessageAfterTimeout(
+    messageVariable: 'successMessage' | 'errorMessage',
+    timeout: number
+  ) {
+    setTimeout(() => {
+      if (messageVariable === 'successMessage') {
+        this.successMessage = '';
+      } else if (messageVariable === 'errorMessage') {
+        this.errorMessage = '';
+      }
+    }, timeout);
+  }
+
   submitForm() {
     if (this.formContact.valid) {
-      console.log(this.formContact.value);
+      this.apiService.submitForm(this.formContact.value).subscribe({
+        next: (response) => {
+          this.successMessage = response;
+          this.clearMessageAfterTimeout('successMessage', 4000);
+          this.formContact.reset();
+        },
+        error: (error) => {
+          this.errorMessage = 'Error sending email. Please try again later.';
+          this.clearMessageAfterTimeout('successMessage', 4000);
+        },
+      });
     }
   }
 }
