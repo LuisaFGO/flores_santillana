@@ -1,9 +1,24 @@
 import { Component } from '@angular/core';
+import { MessageWspComponent } from '../../shared/message-wsp/message-wsp.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { CarouselComponent } from '../../components/carousel/carousel.component';
+import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: true,
+    imports: [
+        NavbarComponent,
+        CarouselComponent,
+        RouterLink,
+        NgFor,
+        FooterComponent,
+        MessageWspComponent,
+    ],
 })
 export class HomeComponent {
   mediaQuery = window.matchMedia('(max-width: 768px)');

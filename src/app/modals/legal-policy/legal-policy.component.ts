@@ -1,9 +1,12 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'app-legal-policy',
-  templateUrl: './legal-policy.component.html',
-  styleUrls: ['./legal-policy.component.css'],
+    selector: 'app-legal-policy',
+    templateUrl: './legal-policy.component.html',
+    styleUrls: ['./legal-policy.component.css'],
+    standalone: true,
+    imports: [NgStyle],
 })
 export class LegalPolicyComponent {
   @Output() closeModal = new EventEmitter<void>();

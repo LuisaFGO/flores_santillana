@@ -1,11 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ApiService } from 'src/app/services/form.service';
+import { MessageWspComponent } from '../../shared/message-wsp/message-wsp.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { NgIf } from '@angular/common';
+import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    standalone: true,
+    imports: [
+        NavbarComponent,
+        NgIf,
+        ReactiveFormsModule,
+        FooterComponent,
+        MessageWspComponent,
+    ],
 })
 export class ContactComponent implements OnInit {
   formContact: FormGroup;

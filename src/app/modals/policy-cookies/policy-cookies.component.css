@@ -49,7 +49,8 @@ p {
   font-family: "ascendant";
 }
 
-h3 {
+h3,
+h4 {
   font-family: "ascendant";
   font-weight: bold;
 }

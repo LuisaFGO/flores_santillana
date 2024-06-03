@@ -1,10 +1,25 @@
 import { Component, ViewChild } from '@angular/core';
 import { DetailProductComponent } from 'src/app/modals/detail-product/detail-product.component';
+import { MessageWspComponent } from '../../shared/message-wsp/message-wsp.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { RouterLink } from '@angular/router';
+import { NgFor } from '@angular/common';
+import { DetailProductComponent as DetailProductComponent_1 } from '../../modals/detail-product/detail-product.component';
+import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
-  selector: 'app-gallery',
-  templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.css'],
+    selector: 'app-gallery',
+    templateUrl: './gallery.component.html',
+    styleUrls: ['./gallery.component.css'],
+    standalone: true,
+    imports: [
+        NavbarComponent,
+        DetailProductComponent_1,
+        NgFor,
+        RouterLink,
+        FooterComponent,
+        MessageWspComponent,
+    ],
 })
 export class GalleryComponent {
   @ViewChild(DetailProductComponent) modal!: DetailProductComponent;

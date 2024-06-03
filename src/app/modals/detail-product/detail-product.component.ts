@@ -1,9 +1,17 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { NgStyle, NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-detail-product',
-  templateUrl: './detail-product.component.html',
-  styleUrls: ['./detail-product.component.css'],
+    selector: 'app-detail-product',
+    templateUrl: './detail-product.component.html',
+    styleUrls: ['./detail-product.component.css'],
+    standalone: true,
+    imports: [
+        NgStyle,
+        NgFor,
+        RouterLink,
+    ],
 })
 export class DetailProductComponent {
   @Input() product: any;
