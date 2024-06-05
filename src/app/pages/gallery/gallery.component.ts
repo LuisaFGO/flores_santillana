@@ -8,18 +8,18 @@ import { DetailProductComponent as DetailProductComponent_1 } from '../../modals
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
-    selector: 'app-gallery',
-    templateUrl: './gallery.component.html',
-    styleUrls: ['./gallery.component.css'],
-    standalone: true,
-    imports: [
-        NavbarComponent,
-        DetailProductComponent_1,
-        NgFor,
-        RouterLink,
-        FooterComponent,
-        MessageWspComponent,
-    ],
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css'],
+  standalone: true,
+  imports: [
+    NavbarComponent,
+    DetailProductComponent_1,
+    NgFor,
+    RouterLink,
+    FooterComponent,
+    MessageWspComponent,
+  ],
 })
 export class GalleryComponent {
   @ViewChild(DetailProductComponent) modal!: DetailProductComponent;
@@ -30,7 +30,7 @@ export class GalleryComponent {
   products = [
     {
       name: 'Birds of paradise',
-      description: 'Descripción del producto 1',
+      name_spa: 'Aves del paraíso',
       img: 'assets/imgProducts/birdP.jpg',
       allDescription:
         'Strelitzia reginae, popularly called bird of paradise, is a herbaceous species native to South Africa. It is widely cultivated as an ornamental plant because of the peculiar shape of its flower. *information taken from wikipedia here',
@@ -55,19 +55,8 @@ export class GalleryComponent {
       ],
     },
     {
-      name: 'Crops',
-      description: 'Descripción del producto 2',
-      img: 'assets/imgProducts/crops.jpg',
-      allDescription: 'hola',
-      photos: [
-        { img: 'assets/photosDetail/crops_1.jpg', name: 'crops_1' },
-        { img: 'assets/photosDetail/crops_2.jpg', name: 'crops_2' },
-        { img: 'assets/photosDetail/crops_3.jpg', name: 'crops_3' },
-      ],
-    },
-    {
       name: 'Hydrangeas',
-      description: 'Descripción del producto 3',
+      name_spa: 'Hortencias',
       img: 'assets/imgProducts/hortensia.jpg',
       allDescription:
         'The genus Hydrangea includes ornamental plants, commonly known as hydrangeas, native to South and East Asia2 (specifically China, Korea, the Himalayas, Indonesia and Japan) and the Americas. The greatest diversity of species of this genus is found in the areas of China, Korea and Japan. Protected with transparent plastic and individually hydrated.',
@@ -85,7 +74,7 @@ export class GalleryComponent {
     },
     {
       name: 'Ruscus',
-      description: 'Descripción del producto 4',
+      name_spa: 'Ruscus Israeli',
       img: 'assets/imgProducts/ruscus.jpg',
       allDescription:
         'Ruscus is a genus of six species belonging to the family Asparagaceae, formerly Ruscaceae, which until a few years ago was located within Liliaceae broadly defined. The genus is native to western and southern Europe (England), Macaronesia, northwest Africa, and southwest Asia, east of the Caucasus.',
@@ -102,16 +91,32 @@ export class GalleryComponent {
         { img: 'assets/photosDetail/ruscus_3.jpg', name: 'ruscus_3' },
       ],
     },
+  ];
+
+  Process = [
     {
       name: 'Post harvest',
-      description: 'Descripción del producto 5',
+      name_spa: 'Post Cosecha',
       img: 'assets/imgProducts/postHarvest.jpg',
-      allDescription: 'hola',
+      allDescription:
+        'Technical processes of preparing the flower before dispatching to the customer.',
       photos: [
         { img: 'assets/photosDetail/postH_1.jpg', name: 'postH_1' },
         { img: 'assets/photosDetail/postH_2.jpg', name: 'postH_2' },
-        { img: 'assets/photosDetail/postH_3.jpg', name: 'postH_3' },
         { img: 'assets/photosDetail/postH_4.jpg', name: 'postH_4' },
+      ],
+    },
+    {
+      name: 'Crops',
+      name_spa: 'Cultivos',
+      img: 'assets/photosDetail/crops_1.jpg',
+      allDescription:
+        'Development of processes in the field to produce the best flowers',
+      photos: [
+        { img: 'assets/photosDetail/crops_2.jpg', name: 'crops_1' },
+        { img: 'assets/photosDetail/crops_3.jpg', name: 'crops_2' },
+        { img: 'assets/imgProducts/crops.jpg', name: 'crops_3' },
+        { img: 'assets/photosDetail/postH_3.jpg', name: 'postH_3' },
       ],
     },
   ];

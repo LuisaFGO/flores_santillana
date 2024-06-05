@@ -16,12 +16,27 @@
   ></app-detail-product>
 
   <div class="allProducts">
+    <h3>PRODUCTS</h3>
     <ng-container *ngFor="let product of products; let i = index">
       <div class="cardProduct">
         <img [src]="product.img" class="card-img-top" />
         <div class="cardProduct-body">
           <h4 class="cardProduct-title">{{ product.name }}</h4>
-          <p class="cardProduct-text">{{ product.description }}</p>
+          <p class="cardProduct-text">{{ product.name_spa }}</p>
+          <button (click)="openModal(product)">Detail</button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="allProducts">
+    <h3>PROCESS</h3>
+    <ng-container *ngFor="let product of Process; let i = index">
+      <div class="cardProduct">
+        <img [src]="product.img" class="card-img-top" />
+        <div class="cardProduct-body">
+          <h4 class="cardProduct-title">{{ product.name }}</h4>
+          <p class="cardProduct-text">{{ product.name_spa }}</p>
           <button (click)="openModal(product)">Detail</button>
         </div>
       </div>

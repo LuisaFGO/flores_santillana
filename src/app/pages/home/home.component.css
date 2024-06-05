@@ -2,6 +2,7 @@
 
 h2 {
   margin-top: 10px;
+  margin-left: 4%;
   color: #7c2520;
   font-family: "ascendant";
   font-weight: bold;
@@ -76,6 +77,7 @@ button:hover {
   padding: 15px;
   overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 5%;
 }
 
 .cardProduct-title {
@@ -90,11 +92,12 @@ button:hover {
 }
 
 .arrows-container {
-  display: flex;
+  display: none;
+  margin-bottom: 2%;
+  /* display: flex;
   justify-content: flex-end;
   margin-right: 7%;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-top: 2%; */
 }
 
 .arrow-btn {
@@ -246,6 +249,9 @@ button:hover {
   }
 
   .arrows-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
     margin-right: 2%;
     margin-top: 2%;
   }

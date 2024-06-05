@@ -7,18 +7,18 @@ import { CarouselComponent } from '../../components/carousel/carousel.component'
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css'],
-    standalone: true,
-    imports: [
-        NavbarComponent,
-        CarouselComponent,
-        RouterLink,
-        NgFor,
-        FooterComponent,
-        MessageWspComponent,
-    ],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports: [
+    NavbarComponent,
+    CarouselComponent,
+    RouterLink,
+    NgFor,
+    FooterComponent,
+    MessageWspComponent,
+  ],
 })
 export class HomeComponent {
   mediaQuery = window.matchMedia('(max-width: 768px)');
@@ -33,28 +33,18 @@ export class HomeComponent {
   products = [
     {
       name: 'Birds of paradise',
-      description: 'Descripción del producto 1',
+      name_spa: 'Aves del paraíso',
       img: 'assets/imgProducts/birdP.jpg',
     },
     {
-      name: 'Crops',
-      description: 'Descripción del producto 2',
-      img: 'assets/imgProducts/crops.jpg',
-    },
-    {
       name: 'Hydrangeas',
-      description: 'Descripción del producto 3',
+      name_spa: 'Hortencias',
       img: 'assets/imgProducts/hortensia.jpg',
     },
     {
       name: 'Ruscus',
-      description: 'Descripción del producto 4',
+      name_spa: 'Ruscus Israeli',
       img: 'assets/imgProducts/ruscus.jpg',
-    },
-    {
-      name: 'Post harvest',
-      description: 'Descripción del producto 5',
-      img: 'assets/imgProducts/postHarvest.jpg',
     },
   ];
 
