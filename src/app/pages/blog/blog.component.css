@@ -1,0 +1,20 @@
+.aboutus_content {
+  margin-bottom: 3%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+h1 {
+  text-align: center;
+  color: #7c2520;
+  font-family: "ascendant";
+  font-weight: bold;
+  letter-spacing: 2px;
+}
