@@ -16,28 +16,29 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailProductComponent } from './modals/detail-product/detail-product.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
-    declarations: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgbModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        HomeComponent,
-        NavbarComponent,
-        CarouselComponent,
-        FooterComponent,
-        MessageWspComponent,
-        LegalPolicyComponent,
-        PolicyCookiesComponent,
-        AboutUsComponent,
-        GalleryComponent,
-        ContactComponent,
-        DetailProductComponent,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
+  declarations: [AppComponent, BlogComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HomeComponent,
+    NavbarComponent,
+    CarouselComponent,
+    FooterComponent,
+    MessageWspComponent,
+    LegalPolicyComponent,
+    PolicyCookiesComponent,
+    AboutUsComponent,
+    GalleryComponent,
+    ContactComponent,
+    DetailProductComponent,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
