@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install --legacy-peer-deps
 
 # Copia el resto de los archivos del proyecto
-COPY .env .
+COPY . .
 
 # Construye la aplicación Angular para producción
 RUN npm run build --prod

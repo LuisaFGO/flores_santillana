@@ -1,4 +1,5 @@
 export const environment = {
-  production: true,
-  apiUrl: import.meta.env.API_URL,
+  // production: true,
+  // apiUrl: import.meta.env.APP_URL,
+  apiUrl: 'http://localhost:3004/send_email',
 };
