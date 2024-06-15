@@ -1,3 +1,3 @@
 export const environment = {
-  apiUrl: import.meta.env.API_URL,
+  apiUrl: import.meta.env.NG_APP_URL,
 };
