@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "env-cmd -f .env.dev ng serve",
+    "build": "env-cmd -f .env.prod ng build",
     "start:prod": "node server.js",
     "test": "ng test"
   },
@@ -32,6 +32,7 @@
     "@angular/compiler-cli": "^16.2.0",
     "@angular/localize": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "env-cmd": "^10.1.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
