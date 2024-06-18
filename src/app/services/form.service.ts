@@ -12,7 +12,6 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   submitForm(data: any): Observable<any> {
-    console.log(this.url);
     return this.http.post(`${this.url}/send_email`, data, {
       responseType: 'text',
     });
