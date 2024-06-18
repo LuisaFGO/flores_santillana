@@ -4,7 +4,6 @@ declare interface Env {
   // Example: NGX_VERSION: string;
   [key: string]: any;
   readonly NG_APP_URL: string;
-  readonly NG_APP_LOCAL_HOST: string;
 }
 
 // Choose how to access the environment variables.

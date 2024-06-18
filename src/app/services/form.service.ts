@@ -7,12 +7,13 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class ApiService {
-  private apiUrl = environment.apiUrl;
+  private url = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
   submitForm(data: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/send_email`, data, {
+    console.log(this.url);
+    return this.http.post(`${this.url}/send_email`, data, {
       responseType: 'text',
     });
   }
