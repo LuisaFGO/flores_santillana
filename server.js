@@ -8,6 +8,7 @@ const app = express();
 // app.get("/*", (req, res) =>
 //   res.sendFile("index.html", { root: "dist/flores_santillana" })
 // );
+app.post("/send_email");
 
 app.use(express.static(path.join(__dirname, "dist/flores_santillana")));
 
