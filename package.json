@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
+    "build:prod": "NG_APP_URL=$NG_APP_URL ng build --configuration production",
     "start:prod": "node server.js",
     "test": "ng test"
   },

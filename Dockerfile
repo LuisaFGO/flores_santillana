@@ -14,7 +14,8 @@ RUN npm install --legacy-peer-deps
 COPY . .
 
 # Construye la aplicación Angular para producción
-RUN npm run build --prod
+# RUN npm run build --prod
+RUN npm run build:prod
 
 # Expone el puerto 8080
 EXPOSE 8080
